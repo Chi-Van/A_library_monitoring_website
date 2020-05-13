@@ -1,2 +1,6 @@
-# A_library_monitoring_website
-This is an example of using Github for Scum in pratical project
+#NOTE HE THONG
+
+##Department  Quản lý phòng ban
+
+##TABLE
+    * type_documents : Loại văn bản
