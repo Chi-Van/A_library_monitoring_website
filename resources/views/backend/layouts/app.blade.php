@@ -117,7 +117,7 @@
                 <li class="treeview @if($activeMenu == 'Borrow' || $activeMenu == 'ListBorrowBook') active menu-open @endif">
                     <a href="#">
                         <i class="fa fa-fw fa-book"></i>
-                        <span>Borrow/Return Management</span>
+                        <span>Document Management</span>
                     </a>
                     <ul class="treeview-menu @if($activeMenu == 'Borrow' || $activeMenu == 'ListBorrowBook') active menu-open @endif">
                         <li class="{{ $activeMenu == 'Borrow' ? 'active menu-open' : '' }}"><a href="{{ route('get.list.borrow') }}"><i class="fa fa-circle-o"></i> <span>Borrow </span></a></li>
