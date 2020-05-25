@@ -64,9 +64,9 @@
             </div>
             @if (!isset($book))
                 <div class="form-group {{ $errors->first('ib_issue_number') ? 'has-error' : '' }} mg-t-15">
-                    <label for="inputEmail3" class="control-label">Edition</label>
+                    <label for="inputEmail3" class="control-label">Issue Number</label>
                     <div>
-                        <input type="number" min="0" class="form-control"  placeholder="Edition" name="ib_issue_number" value="{{ old('ib_issue_number') }}">
+                        <input type="number" min="0" class="form-control"  placeholder="Issue Number" name="ib_issue_number" value="{{ old('ib_issue_number') }}">
                         <span class="text-danger "><p class="mg-t-5">{{ $errors->first('ib_issue_number') }}</p></span>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <input class="form-control random_code" id="random_code" style="width: 320px;" oninput="if(value.length>10)value=value.slice(0,10)" name="b_code_book" value="{{ old('b_code_book', isset($book) ? $book->b_code_book : '') }}" type="text" placeholder="Code Book">
                 </div>
                 <div class="col-sm-4 default" style="display: inline-block;">
-                    <button class="btn btn-blue btn-info btn-change btn-change-code" style="float: right;"><i class="fa fa-fw fa-refresh"></i>  Create code</button>
+                    <button class="btn btn-blue btn-info btn-change btn-change-code" ><i class="fa fa-fw fa-refresh"></i>  Create code</button>
                 </div>
                 <div class="col-sm-12 default" style="display: inline-block;">
                     @if($errors->has('b_code_book'))
@@ -89,9 +89,9 @@
             </div>
 
             <div class="form-group {{ $errors->first('b_description') ? 'has-error' : '' }}">
-                <label for="inputEmail3" class="control-label default">Description <sup class="title-sup"> (*)</sup></label>
+                <label for="inputEmail3" class="control-label default">Description</label>
                 <div>
-                    <textarea name="b_description" id="b_description" cols="60" rows="5" style="height: 100px;">{{ old('b_description', isset($book) ? $book->b_description : '') }}</textarea>
+                    <textarea name="b_description" id="b_description" cols="74" rows="5" style="height: 100px;">{{ old('b_description', isset($book) ? $book->b_description : '') }}</textarea>
                     <span class="text-danger "><p class="mg-t-5">{{ $errors->first('b_description') }}</p></span>
                 </div>
             </div>
